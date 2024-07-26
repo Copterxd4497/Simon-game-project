@@ -1,0 +1,42 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,70,122,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    margin-left: 2%;
+}
+
+.red{
+    background-color: tomato;
+    grid-column: 8 / 14;
+    grid-row: 2 / 7;
+    
+}
+.blue{
+    background-color: lightblue;
+    grid-column: 17 / 23;
+    grid-row: 2 / 7;
+}
+.green{
+    background-color: lightgreen;
+    grid-column: 8 / 14;
+    grid-row: 8 / 13;
+}
+.yellow{
+    background-color: lightyellow;
+    grid-column: 17 / 23;
+    grid-row: 8 / 13;
+}
+ button{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 40px;
+ }
+ .text{
+    color: white;
+    text-align: center;
+ }
