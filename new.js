@@ -36,7 +36,7 @@ yellow.addEventListener('click', () => flash(yellow));
 
 
 let userClickedPattern = [];
-let userChosenColour = red.addEventListener('click', function(event){
+let userChosenColour = red.addEventListener('click', function (event) {
     let buttonId = event.target.id;
     console.log("Clicked button ID:", buttonId);
     red.value = buttonId;
@@ -46,18 +46,11 @@ let userChosenColour = red.addEventListener('click', function(event){
 userClickedPattern = userChosenColour;
 console.log(userClickedPattern);
 
-function nextSequence() {
-    if (userClickedPattern.length > 0) {
-        text.textContent = 'Level 0';
-    }
+function nextSequence(){
+    document.addEventListener('keydown', function(event){
+        if(event == 'a' || event == 'A'){
+            text.textContext = 'Level 0'
+        }
+    })
 }
-
-// Add event listener for keydown event
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'a' || event.key === 'A') {
-        text.textContent = 'Level 0';
-    }
-});
-
-// Call nextSequence when needed
 nextSequence();
