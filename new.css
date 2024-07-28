@@ -1,3 +1,14 @@
+.flash {
+    animation: flash-animation 0.1s;
+}
+
+@keyframes flash-animation {
+    0% { background-color: white; }
+    50% { background-color: currentColor; }
+    100% { background-color: white; }
+}
+
+
 body{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,70,122,1) 35%, rgba(0,212,255,1) 100%);
@@ -11,23 +22,23 @@ body{
 }
 
 .red{
-    background-color: tomato;
+    background-color: #EA3C18;
     grid-column: 8 / 14;
     grid-row: 2 / 7;
     
 }
 .blue{
-    background-color: lightblue;
+    background-color: #8ADEEB;
     grid-column: 17 / 23;
     grid-row: 2 / 7;
 }
 .green{
-    background-color: lightgreen;
+    background-color: #60EB92;
     grid-column: 8 / 14;
     grid-row: 8 / 13;
 }
 .yellow{
-    background-color: lightyellow;
+    background-color: #EBE578;
     grid-column: 17 / 23;
     grid-row: 8 / 13;
 }
@@ -39,4 +50,6 @@ body{
  .text{
     color: white;
     text-align: center;
+    margin-left: 1.5em;
  }
+
